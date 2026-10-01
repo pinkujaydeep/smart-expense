@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Smart Expense - salary and expense planner">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg">
+  <title>Smart Expense</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">OCTOBER 2026</div>
+        <h1>Smart Expense</h1>
+      </div>
+      <button id="resetBtn" class="icon-btn" aria-label="Reset data">↻</button>
+    </header>
+
+    <section class="hero">
+      <div class="hero-label">Money left this month</div>
+      <div id="remaining" class="hero-value">₹0</div>
+      <div class="hero-sub"><span id="spentPct">0%</span> of your salary planned</div>
+      <div class="progress"><div id="progressBar"></div></div>
+      <div class="hero-grid">
+        <div><span>Salary</span><strong id="salaryOut">₹0</strong></div>
+        <div><span>Expenses</span><strong id="expenseOut">₹0</strong></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><h2>Monthly plan</h2><span class="badge">Editable</span></div>
+      <label>Net salary <input id="salary" type="number" min="0" step="1000" placeholder="e.g. 120000"></label>
+      <div id="expenseList"></div>
+      <button id="addExpense" class="secondary">+ Add expense</button>
+    </section>
+
+    <section class="card smart">
+      <div class="section-head"><h2>Smart plan</h2><span class="spark">✦</span></div>
+      <p id="smartText">Enter your salary and expenses to get a personalized allocation.</p>
+      <div class="allocation">
+        <div><span>Needs</span><strong id="needs">₹0</strong></div>
+        <div><span>Goals</span><strong id="goals">₹0</strong></div>
+        <div><span>Free</span><strong id="free">₹0</strong></div>
+      </div>
+      <ul id="tips" class="tips"></ul>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><h2>Quick actions</h2></div>
+      <div class="actions">
+        <button data-add="Emergency Fund">＋ Emergency Fund</button>
+        <button data-add="Investment">＋ Investment</button>
+        <button data-add="Entertainment">＋ Entertainment</button>
+        <button data-add="Shopping">＋ Shopping</button>
+      </div>
+    </section>
+
+    <footer>Data stays on this device. No account required.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "Smart Expense",
+  "short_name": "Smart Expense",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f4f6f8",
+  "theme_color": "#111827",
+  "description": "Salary and smart expense planner"
+}
