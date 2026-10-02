@@ -1,26 +1,14 @@
-# Smart Expense PWA
+# Smart Expense AI
 
-Mobile-first salary and expense planner.
+Monthly salary-management PWA. No daily expense entry.
 
-## Netlify
-Drag the project folder/zip contents into Netlify Drop, or connect the repository. No build command is required.
+Features: income, recurring commitments, savings target, goals, available-to-spend, spending guide, local Smart Coach, AI Coach, insights, local storage, JSON backup, PWA and Netlify Function.
 
-## Features
-- Net salary and expense calculator
-- Remaining balance
-- Expense percentage
-- Smart allocation suggestion
-- Debt warning
-- Quick-add categories
-- Installable PWA with offline cache
-- No backend required in this starter version
+## Netlify deployment
+1. Extract/upload this project to Netlify (or connect its GitHub repo).
+2. `netlify.toml` configures publish `.` and functions `netlify/functions`.
+3. Netlify Site configuration -> Environment variables -> add `GEMINI_API_KEY`.
+4. Redeploy.
+5. Open the HTTPS site on your phone and Add to Home Screen / Install.
 
-## Next version ideas
-- Monthly history
-- Recurring expenses
-- Budget vs actual
-- Savings goals
-- Emergency-fund calculator
-- Charts
-- Local device persistence
-- Optional Firebase login/sync
+The API key stays server-side. Do not put it in app.js. Gemini free quotas/availability can change, so check current provider terms. The calculator itself is deterministic; AI only explains/suggests. This is not professional financial advice.

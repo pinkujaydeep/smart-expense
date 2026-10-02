@@ -1,9 +1,15 @@
 {
-  "name": "Smart Expense",
+  "name": "Smart Expense AI",
   "short_name": "Smart Expense",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#f4f6f8",
+  "background_color": "#f3f5f7",
   "theme_color": "#111827",
-  "description": "Salary and smart expense planner"
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
 }
