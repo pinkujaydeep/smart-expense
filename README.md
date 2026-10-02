@@ -12,3 +12,7 @@ Features: income, recurring commitments, savings target, goals, available-to-spe
 5. Open the HTTPS site on your phone and Add to Home Screen / Install.
 
 The API key stays server-side. Do not put it in app.js. Gemini free quotas/availability can change, so check current provider terms. The calculator itself is deterministic; AI only explains/suggests. This is not professional financial advice.
+
+
+### Gemini model configuration
+The Netlify function defaults to `gemini-3.8-flash`. You can optionally set `GEMINI_MODEL=gemini-3.8-flash` in Netlify environment variables.
